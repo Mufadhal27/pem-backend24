@@ -2,27 +2,27 @@ const { fruits } = require('./data');
 
 const addFruit = (fruit) => {
     fruits.push(fruit);
-    console.log(`Adding ${fruit} to the list...`);
-    console.log(`Updated Fruits List: ${JSON.stringify(fruits)}`);
+    console.log(`Menambahkan ${fruit} ke daftar...`);
+    console.log(`Daftar Buah Terkini: ${JSON.stringify(fruits)}`);
 };
 
 const updateFruit = (index, newFruit) => {
     if (index >= 0 && index < fruits.length) {
-        console.log(`Replacing fruit at index ${index} with ${newFruit}...`);
+        console.log(`Mengganti buah pada indeks ${index} dengan ${newFruit}...`);
         fruits[index] = newFruit;
-        console.log(`Updated Fruits List: ${JSON.stringify(fruits)}`);
+        console.log(`Daftar Buah Terkini: ${JSON.stringify(fruits)}`);
     } else {
-        console.log(`Index ${index} is not valid.`);
+        console.log(`Indeks ${index} tidak valid.`);
     }
 };
 
 const deleteFruit = (index) => {
     if (index >= 0 && index < fruits.length) {
-        console.log(`Removing fruit at index ${index}...`);
+        console.log(`Menghapus buah pada indeks ${index}...`);
         fruits.splice(index, 1);
-        console.log(`Updated Fruits List: ${JSON.stringify(fruits)}`);
+        console.log(`Daftar Buah Terkini: ${JSON.stringify(fruits)}`);
     } else {
-        console.log(`Index ${index} is not valid.`);
+        console.log(`Indeks ${index} tidak valid.`);
     }
 };
 
