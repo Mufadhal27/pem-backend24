@@ -1,7 +1,7 @@
-const { addFruit, updateFruit, deleteFruit } = require('./fruits');
+const { addFruit, updateFruit, deleteFruit } = require('./FruitController');
 const { fruits } = require('./data');
 
 console.log(`Daftar Buah: ${JSON.stringify(fruits)}`);
-addFruit('plum');
-updateFruit(1, 'pineapple');
+addFruit('Pisang');
+updateFruit(0, 'Kelapa');
 deleteFruit(0);
