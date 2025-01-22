@@ -1,0 +1,31 @@
+const { persiapan } = require("./download");
+
+const potongSayur = () => {
+    return new Promise((resolve, reject) => {
+        const status = true;
+
+        setTimeout(() => {
+            if (status) {
+                resolve("Sayur berhasil dipotong");
+            } else {
+                reject("Gagal memotong sayur");
+            }
+        }, 2000);
+    });
+};
+
+const masakMakanan = () => {
+    return new Promise((resolve, reject) => {
+        const status = true;
+
+        setTimeout(() => {
+            if (status) {
+                resolve("Makanan berhasil dimasak");
+            } else {
+                reject("Gagal memasak makanan");
+            }
+        }, 4000);
+    });
+};
+
+module.exports = { persiapan, potongSayur, masakMakanan };
